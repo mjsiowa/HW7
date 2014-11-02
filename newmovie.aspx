@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="moviedetails.aspx.vb" Inherits="moviedetails" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="newmovie.aspx.vb" Inherits="newmovie" %>
 
 <!DOCTYPE html>
 
@@ -11,7 +11,7 @@
     <form id="form1" runat="server">
     <div>
 
-         <div class="header">
+        <div class="header">
         <table><tr>
         <td><asp:Image ID="Image1" runat="server" src="pics/film.jpg" /></td>
             <td>All About Movies</td>
@@ -22,8 +22,8 @@
             Nav Menu
         </div>
 
-    <div class="mainapp">
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_mstaub_movies %>" DeleteCommand="DELETE FROM [mstaub_movies] WHERE [MovieID] = @MovieID" InsertCommand="INSERT INTO [mstaub_movies] ([Title], [ReleaseYear], [DirectorLName], [USGross], [Genre], [MPAArating], [OscarBestPicture], [OscarBestDirector]) VALUES (@Title, @ReleaseYear, @DirectorLName, @USGross, @Genre, @MPAArating, @OscarBestPicture, @OscarBestDirector)" SelectCommand="SELECT * FROM [mstaub_movies] WHERE ([MovieID] = @MovieID)" UpdateCommand="UPDATE [mstaub_movies] SET [Title] = @Title, [ReleaseYear] = @ReleaseYear, [DirectorLName] = @DirectorLName, [USGross] = @USGross, [Genre] = @Genre, [MPAArating] = @MPAArating, [OscarBestPicture] = @OscarBestPicture, [OscarBestDirector] = @OscarBestDirector WHERE [MovieID] = @MovieID">
+        <div class="mainapp">
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_mstaub_movies %>" DeleteCommand="DELETE FROM [mstaub_movies] WHERE [MovieID] = @MovieID" InsertCommand="INSERT INTO [mstaub_movies] ([Title], [ReleaseYear], [DirectorLName], [USGross], [Genre], [MPAArating], [OscarBestPicture], [OscarBestDirector]) VALUES (@Title, @ReleaseYear, @DirectorLName, @USGross, @Genre, @MPAArating, @OscarBestPicture, @OscarBestDirector)" SelectCommand="SELECT * FROM [mstaub_movies]" UpdateCommand="UPDATE [mstaub_movies] SET [Title] = @Title, [ReleaseYear] = @ReleaseYear, [DirectorLName] = @DirectorLName, [USGross] = @USGross, [Genre] = @Genre, [MPAArating] = @MPAArating, [OscarBestPicture] = @OscarBestPicture, [OscarBestDirector] = @OscarBestDirector WHERE [MovieID] = @MovieID">
             <DeleteParameters>
                 <asp:Parameter Name="MovieID" Type="Int32" />
             </DeleteParameters>
@@ -37,9 +37,6 @@
                 <asp:Parameter Name="OscarBestPicture" Type="String" />
                 <asp:Parameter Name="OscarBestDirector" Type="String" />
             </InsertParameters>
-            <SelectParameters>
-                <asp:QueryStringParameter Name="MovieID" QueryStringField="MovieID" Type="Int32" />
-            </SelectParameters>
             <UpdateParameters>
                 <asp:Parameter Name="Title" Type="String" />
                 <asp:Parameter Name="ReleaseYear" Type="Decimal" />
@@ -52,25 +49,33 @@
                 <asp:Parameter Name="MovieID" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
+
+
+
+
+    
         <br />
-        <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="MovieID" DataSourceID="SqlDataSource1" Height="50px" Width="295px" CellPadding="4" CellSpacing="2">
+        <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="MovieID" DataSourceID="SqlDataSource1" DefaultMode="Insert" Height="50px" Width="125px">
             <Fields>
+                <asp:BoundField DataField="MovieID" HeaderText="MovieID" InsertVisible="False" ReadOnly="True" SortExpression="MovieID" />
                 <asp:BoundField DataField="Title" HeaderText="Title" SortExpression="Title" />
-                <asp:BoundField DataField="ReleaseYear" HeaderText="Release Year" SortExpression="ReleaseYear" />
-                <asp:BoundField DataField="DirectorLName" HeaderText="Director" SortExpression="DirectorLName" />
-                <asp:BoundField DataField="USGross" HeaderText="US Gross" SortExpression="USGross" DataFormatString="{0:C}" />
+                <asp:BoundField DataField="ReleaseYear" HeaderText="ReleaseYear" SortExpression="ReleaseYear" />
+                <asp:BoundField DataField="DirectorLName" HeaderText="DirectorLName" SortExpression="DirectorLName" />
+                <asp:BoundField DataField="USGross" HeaderText="USGross" SortExpression="USGross" />
                 <asp:BoundField DataField="Genre" HeaderText="Genre" SortExpression="Genre" />
-                <asp:BoundField DataField="MPAArating" HeaderText="MPAA Rating" SortExpression="MPAArating" />
-                <asp:BoundField DataField="OscarBestPicture" HeaderText="Oscar Best Picture" SortExpression="OscarBestPicture" />
-                <asp:BoundField DataField="OscarBestDirector" HeaderText="Oscar Best Director" SortExpression="OscarBestDirector" />
+                <asp:BoundField DataField="MPAArating" HeaderText="MPAArating" SortExpression="MPAArating" />
+                <asp:BoundField DataField="OscarBestPicture" HeaderText="OscarBestPicture" SortExpression="OscarBestPicture" />
+                <asp:BoundField DataField="OscarBestDirector" HeaderText="OscarBestDirector" SortExpression="OscarBestDirector" />
+                <asp:CommandField ShowInsertButton="True" />
             </Fields>
         </asp:DetailsView>
         </div>
 
-     <div class="footer">
+
+          <div class="footer">
             Footer Div
         </div>
-
+    
     </div>
     </form>
 </body>

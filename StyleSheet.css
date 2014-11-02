@@ -1,2 +1,22 @@
-﻿body {
+﻿body { background-color:cornflowerblue
+
 }
+
+.header { margin-left:8px; margin-right:8px; margin-top:8px; background-color:whitesmoke; 
+          padding-left:25px; padding-right:25px; padding-top:10px; padding-bottom:10px;
+          border-top:1px solid black; border-left:1px solid black; border-right:1px solid black;
+}
+
+.navmenu { margin-left:8px; margin-right:8px; background-color:whitesmoke;
+           padding-left:10px; padding-right:10px; border-left:1px solid black; border-right:1px solid black;
+}
+
+.mainapp { margin-left:8px; margin-right:8px; background-color:whitesmoke;
+           padding-left:10px; padding-right:10px; border-left:1px solid black; border-right:1px solid black;
+}
+
+.footer { margin-left:8px; margin-right:8px; margin-bottom:8px; background-color:whitesmoke;
+          padding-left:10px; padding-right:10px; padding-top:10px; padding-bottom:10px;
+          border-left:1px solid black; border-right:1px solid black; border-bottom:1px solid black;
+}
+

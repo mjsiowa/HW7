@@ -12,8 +12,20 @@
 <body>
     <form id="form1" runat="server">
     <div>
+
+    <div class="header">
+        <table><tr>
+        <td><asp:Image ID="Image1" runat="server" src="pics/film.jpg" /></td>
+            <td>All About Movies</td>
+            </tr></table>
+    </div>
+
+        <div class="navmenu">
+            Nav Menu
+        </div>
     
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_mstaub_movies %>" DeleteCommand="DELETE FROM [mstaub_movies] WHERE [MovieID] = @MovieID" InsertCommand="INSERT INTO [mstaub_movies] ([Title], [ReleaseYear], [DirectorLName], [USGross], [Genre], [MPAArating], [OscarBestPicture], [OscarBestDirector]) VALUES (@Title, @ReleaseYear, @DirectorLName, @USGross, @Genre, @MPAArating, @OscarBestPicture, @OscarBestDirector)" SelectCommand="SELECT * FROM [mstaub_movies]" UpdateCommand="UPDATE [mstaub_movies] SET [Title] = @Title, [ReleaseYear] = @ReleaseYear, [DirectorLName] = @DirectorLName, [USGross] = @USGross, [Genre] = @Genre, [MPAArating] = @MPAArating, [OscarBestPicture] = @OscarBestPicture, [OscarBestDirector] = @OscarBestDirector WHERE [MovieID] = @MovieID">
+        <div class="mainapp">
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_mstaub_movies %>" DeleteCommand="DELETE FROM [mstaub_movies] WHERE [MovieID] = @MovieID" InsertCommand="INSERT INTO [mstaub_movies] ([Title], [ReleaseYear], [DirectorLName], [USGross], [Genre], [MPAArating], [OscarBestPicture], [OscarBestDirector]) VALUES (@Title, @ReleaseYear, @DirectorLName, @USGross, @Genre, @MPAArating, @OscarBestPicture, @OscarBestDirector)" SelectCommand="SELECT * FROM [mstaub_movies] ORDER BY [Title]" UpdateCommand="UPDATE [mstaub_movies] SET [Title] = @Title, [ReleaseYear] = @ReleaseYear, [DirectorLName] = @DirectorLName, [USGross] = @USGross, [Genre] = @Genre, [MPAArating] = @MPAArating, [OscarBestPicture] = @OscarBestPicture, [OscarBestDirector] = @OscarBestDirector WHERE [MovieID] = @MovieID">
             <DeleteParameters>
                 <asp:Parameter Name="MovieID" Type="Int32" />
             </DeleteParameters>
@@ -51,6 +63,11 @@
                 <asp:HyperLinkField DataNavigateUrlFields="MovieID" DataNavigateUrlFormatString="moviedetails.aspx?MovieID={0}" Text="Details View" />
             </Columns>
         </asp:GridView>
+            </div>
+
+        <div class="footer">
+            Footer Div
+        </div>
 
 
     </div>
