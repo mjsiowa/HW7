@@ -1,0 +1,41 @@
+﻿<%@ Master Language="VB" CodeFile="movies.master.vb" Inherits="movies" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+        </title>
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+          <div class="header">
+        <table><tr>
+        <td><asp:Image ID="Image1" runat="server" src="pics/film.jpg" /></td>
+            <td>All About Movies</td>
+            </tr></table>
+    </div>
+
+         <div class="navmenu">
+            Nav Menu
+        </div>
+    
+        <div class="mainapp">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div>
+
+         <div class="footer">
+            Footer Div
+        </div>
+
+    </div>
+    </form>
+</body>
+</html>
