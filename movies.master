@@ -37,7 +37,12 @@
                <li>
                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/search.aspx">Search</asp:HyperLink></li>
                <li>  |  </li>
-               <li>Admin</li>
+               <li>
+                   <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/admin/Default.aspx">Admin</asp:HyperLink></li>
+               <li>  |  </li>
+               <li>
+                   <asp:LoginStatus ID="LoginStatus1" runat="server" />
+               </li>
            </ul>
              
         </div>

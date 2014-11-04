@@ -39,7 +39,7 @@
                 <asp:BoundField DataField="ReleaseYear" HeaderText="Release Year" SortExpression="ReleaseYear" />
                 <asp:BoundField DataField="Genre" HeaderText="Genre" SortExpression="Genre" />
                 <asp:BoundField DataField="MPAArating" HeaderText="MPAA Rating" SortExpression="MPAArating" />
-                <asp:HyperLinkField DataNavigateUrlFields="MovieID" DataNavigateUrlFormatString="moviedetails.aspx?MovieID={0}" Text="Details View" />
+                <asp:HyperLinkField DataNavigateUrlFields="MovieID" DataNavigateUrlFormatString="moviedetails.aspx?MovieID={0}" Text="More Details" />
             </Columns>
         </asp:GridView>
 
