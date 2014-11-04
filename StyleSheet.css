@@ -1,22 +1,50 @@
-﻿body { background-color:cornflowerblue
+﻿body { background-color:cornflowerblue; font-size:14px;
 
 }
 
-.header { margin-left:8px; margin-right:8px; margin-top:8px; background-color:whitesmoke; 
-          padding-left:25px; padding-right:25px; padding-top:10px; padding-bottom:10px;
-          border-top:1px solid black; border-left:1px solid black; border-right:1px solid black;
+h1 {font-size: 26px;}
+
+h2 {font-size: 22px;}
+
+h3 {font-size: 18px;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-.navmenu { margin-left:8px; margin-right:8px; background-color:whitesmoke;
-           padding-left:10px; padding-right:10px; border-left:1px solid black; border-right:1px solid black;
+
+
+li {
+    display: inline;
 }
 
-.mainapp { margin-left:8px; margin-right:8px; background-color:whitesmoke;
-           padding-left:10px; padding-right:10px; border-left:1px solid black; border-right:1px solid black;
+a { text-decoration:none; }
+
+a:hover, a:active { text-decoration:none; color:black; }
+
+.container {width:801px; margin: 0 auto; border:2px solid black;
 }
 
-.footer { margin-left:8px; margin-right:8px; margin-bottom:8px; background-color:whitesmoke;
-          padding-left:10px; padding-right:10px; padding-top:10px; padding-bottom:10px;
-          border-left:1px solid black; border-right:1px solid black; border-bottom:1px solid black;
+.header-right { background-color:black; color:white;
+          padding-top:70px; padding-right:8px; padding-bottom:5px; float:right; width:317px; text-align:right;
+          }
+
+.header-left { font-size:36px; background-color:black; color:white;
+          float:left; padding:25px; width:426px;
+          }
+
+.navmenu { clear:both;  background-color:whitesmoke; font-size:18px;
+           padding-left:10px; padding-right:10px; padding-top:6px;
+}
+
+.mainapp {  background-color:whitesmoke; font-size:18px;
+           padding:10px;
+}
+
+.footer { background-color:whitesmoke;
+          padding:20px;
+          
 }
 

@@ -12,17 +12,34 @@
 </head>
 <body>
     <form id="form1" runat="server">
+
     <div>
+
+        <div class="container">
+            <div class="header-left">All About Movies</div>
         
-          <div class="header">
-        <table><tr>
-        <td><asp:Image ID="Image1" runat="server" src="pics/film.jpg" /></td>
-            <td>All About Movies</td>
-            </tr></table>
-    </div>
+          <div class="header-right">
+              <asp:Label ID="lbl_date" runat="server" Text=""></asp:Label>
+              </div>
+
 
          <div class="navmenu">
-            Nav Menu
+           <ul>
+               <li>
+                   <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/default.aspx">Home</asp:HyperLink></li>
+               <li>  |  </li>
+               <li>
+                   <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/aboutus.aspx">About Us</asp:HyperLink></li>
+               <li>  |  </li>
+               <li>
+                   <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/contact.aspx">Contact</asp:HyperLink></li>
+               <li>  |  </li>
+               <li>
+                   <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/search.aspx">Search</asp:HyperLink></li>
+               <li>  |  </li>
+               <li>Admin</li>
+           </ul>
+             
         </div>
     
         <div class="mainapp">
@@ -32,10 +49,12 @@
         </div>
 
          <div class="footer">
-            Footer Div
+            Copyright &copy; <asp:Label ID="lbl_copy" runat="server" Text=""></asp:Label> Mike Staub - Software Design and Development MSCI:3300
+        </div>
+             </div>
+
         </div>
 
-    </div>
     </form>
 </body>
 </html>
