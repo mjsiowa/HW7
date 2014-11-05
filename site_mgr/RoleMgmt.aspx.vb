@@ -1,8 +1,7 @@
 ﻿Imports System.Data.SqlClient
 Imports System.Data
 
-
-Partial Class Account_AddRole
+Partial Class site_mgr_RoleMgmt
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
@@ -216,5 +215,5 @@ Partial Class Account_AddRole
 
     End Sub
 
-   
+
 End Class

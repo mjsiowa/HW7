@@ -1,8 +1,10 @@
 ﻿Imports System.Data.SqlClient
 Imports System.Data
 
-Partial Class site_mgr_AddNewUser
+
+Partial Class site_mgr_UserMgmt
     Inherits System.Web.UI.Page
+
 
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
 
@@ -11,7 +13,7 @@ Partial Class site_mgr_AddNewUser
 
             BindUsers()
             lbl_deletedUser.Text = String.Empty
-            
+
         End If
 
     End Sub
@@ -61,6 +63,5 @@ Partial Class site_mgr_AddNewUser
         Response.AddHeader("REFRESH", "2;URL=UserMgmt.aspx")
 
     End Sub
-
 
 End Class
