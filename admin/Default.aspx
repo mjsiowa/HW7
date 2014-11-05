@@ -14,7 +14,7 @@
 </asp:HyperLink>
             </td>
             <td>
-                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/admin/search.aspx">
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/admin/admin_search.aspx">
                     <asp:Image ID="Image2" runat="server" ImageUrl="~/pics/red-edit-icon-glossy-md.png" Height="150px" />
                 </asp:HyperLink>
                 
@@ -34,10 +34,10 @@
                 Add New movie
             </td>
             <td>
-                Update/Edit/Delete
+                Update/Delete
             </td>
             <td>
-                Add/Update Users
+                Modify Users
             </td>
         </tr>
 

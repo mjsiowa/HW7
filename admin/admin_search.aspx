@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/movies.master" AutoEventWireup="false" CodeFile="search.aspx.vb" Inherits="search" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/movies.master" AutoEventWireup="false" CodeFile="admin_search.aspx.vb" Inherits="search" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">Search All About Movies
 </asp:Content>
@@ -45,7 +45,7 @@
             <asp:BoundField DataField="ReleaseYear" HeaderText="Release Year" SortExpression="Release Year" />
             <asp:BoundField DataField="Genre" HeaderText="Genre" SortExpression="Genre" />
             <asp:BoundField DataField="DirectorLName" HeaderText="Director" SortExpression="Director" />
-            <asp:HyperLinkField DataNavigateUrlFields="MovieID" DataNavigateUrlFormatString="moviedetails.aspx?MovieID={0}" Text="More Details" />
+            <asp:HyperLinkField DataNavigateUrlFields="MovieID" DataNavigateUrlFormatString="admin_details.aspx?MovieID={0}" Text="More Details" />
         </Columns>
     </asp:GridView>
     <br />
