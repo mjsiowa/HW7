@@ -36,7 +36,7 @@
     
     <p />
    
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="MovieID" DataSourceID="SqlDataSource1" CellPadding="4" CellSpacing="2" CssClass="cssgridview">
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="MovieID" DataSourceID="SqlDataSource1" CellPadding="4" CellSpacing="2" CssClass="cssgridview" AllowPaging="True">
         <AlternatingRowStyle CssClass="alt" />
         <Columns>
             <asp:BoundField DataField="Title" HeaderText="Title" SortExpression="Title" />

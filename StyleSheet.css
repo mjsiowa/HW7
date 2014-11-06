@@ -30,9 +30,9 @@ a:hover, a:active, a:visited { text-decoration:none; color:black; }
 
 .cssgridview td { padding:10px; border:solid 1px;}
 
-.cssgridview th { padding:10px; color:white; background-image:url(/pics/black-gradient.jpg)}
+.cssgridview th { padding:10px; color:white; background-image:url(pics/black-gradient.jpg)}
 
-.cssgridview .alt {background-image:url(/pics/Grey-Gradient.jpg)}
+.cssgridview .alt {background-image:url(pics/Grey-Gradient.jpg)}
 
 .centered {text-align:center;
 }
