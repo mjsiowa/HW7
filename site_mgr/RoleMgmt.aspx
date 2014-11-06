@@ -5,10 +5,12 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <asp:Image ID="login" runat="server" Height="75px" ImageUrl="~/pics/login.jpg" />
-    <asp:Button ID="user_manager" runat="server" Text="Switch to User Manager" />
-   
-            <br /><br /><hr />
+    <table><tr>
+        
+    <td><asp:Image ID="login" runat="server" Height="75px" ImageUrl="~/pics/login.jpg" /></td>
+    <td style="vertical-align:middle"><asp:Button ID="user_manager" runat="server" Text="Switch to User Manager" /></td>
+       </tr></table>
+<hr />
             
                 <h3>Manage Roles:</h3>
 

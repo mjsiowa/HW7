@@ -7,8 +7,14 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
     <div>
-        <asp:Image ID="login" runat="server" Height="75px" ImageUrl="~/pics/login.jpg" />
-        <asp:Button ID="role_button" runat="server" Text="Switch to Role Manager" />
+
+        <table><tr>
+        
+    <td><asp:Image ID="Image1" runat="server" Height="75px" ImageUrl="~/pics/login.jpg" /></td>
+    <td style="vertical-align:middle"><asp:Button ID="role_button" runat="server" Text="Switch to Role Manager" /></td>
+       </tr></table>
+<hr />
+        
 
         
         
