@@ -216,4 +216,7 @@ Partial Class site_mgr_RoleMgmt
     End Sub
 
 
+    Protected Sub user_manager_Click(sender As Object, e As EventArgs) Handles user_manager.Click
+        Response.AddHeader("REFRESH", "0;URL=UserMgmt.aspx")
+    End Sub
 End Class

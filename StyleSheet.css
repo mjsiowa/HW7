@@ -20,19 +20,32 @@ li {
     display: inline;
 }
 
-a { text-decoration:none; }
+a { text-decoration:none; color:black; }
 
-a:hover, a:active { text-decoration:none; color:black; }
+a:hover, a:active, a:visited { text-decoration:none; color:black; }
+
+
+.cssgridview { width:100%; 
+               border-collapse:collapse;}
+
+.cssgridview td { padding:10px; border:solid 1px;}
+
+.cssgridview th { padding:10px; color:white; background-image:url(/pics/black-gradient.jpg)}
+
+.cssgridview .alt {background-image:url(/pics/Grey-Gradient.jpg)}
+
+.centered {text-align:center;
+}
 
 .container {width:801px; margin: 0 auto; border:2px solid black;
 }
 
-.header-right { background-color:black; color:white;
-          padding-top:70px; padding-right:8px; padding-bottom:5px; float:right; width:317px; text-align:right;
+.header-right { background-color:black; color:white;  
+          padding-top:169px; padding-right:8px; padding-bottom:5px; float:right; width:317px; text-align:right;
           }
 
 .header-left { font-size:36px; background-color:black; color:white;
-          float:left; padding:25px; width:426px;
+          float:left; padding:25px; width:426px;  
           }
 
 .navmenu { clear:both;  background-color:whitesmoke; font-size:18px;
@@ -45,6 +58,5 @@ a:hover, a:active { text-decoration:none; color:black; }
 
 .footer { background-color:whitesmoke;
           padding:20px;
-          
-}
+      }
 

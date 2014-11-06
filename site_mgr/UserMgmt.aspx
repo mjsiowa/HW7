@@ -7,7 +7,11 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
     <div>
-        <asp:HyperLink ID="link_roleManager" runat="server" NavigateUrl="~/site_mgr/RoleMgmt.aspx">Role Manager</asp:HyperLink>
+        <asp:Image ID="login" runat="server" Height="75px" ImageUrl="~/pics/login.jpg" />
+        <asp:Button ID="role_button" runat="server" Text="Switch to Role Manager" />
+
+        
+        
         <h3>Create A New User:</h3>
         <asp:CreateUserWizard ID="CreateUserWizard1" runat="server">
             <WizardSteps>

@@ -10,4 +10,10 @@ Partial Class moviedetails
 
         Response.AddHeader("REFRESH", "3;URL=admin_search.aspx")
     End Sub
+
+
+    Protected Sub FormView1_ItemUpdated(sender As Object, e As FormViewUpdatedEventArgs) Handles FormView1.ItemUpdated
+
+        Response.AddHeader("REFRESH", "3;URL=admin_search.aspx")
+    End Sub
 End Class

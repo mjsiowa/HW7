@@ -16,10 +16,12 @@
     <div>
 
         <div class="container">
-            <div class="header-left">All About Movies</div>
+            <div class="header-left">
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/pics/movies.png" Height="135px" />
+                All About Movies</div>
         
           <div class="header-right">
-              <asp:Label ID="lbl_date" runat="server" Text=""></asp:Label>
+              <asp:Label ID="lbl_date" runat="server" Text="" Font-Size="18px"></asp:Label>
               </div>
 
 

@@ -5,8 +5,9 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <asp:HyperLink ID="link_userManager" runat="server" NavigateUrl="~/site_mgr/UserMgmt.aspx">User Manager</asp:HyperLink>
-
+    <asp:Image ID="login" runat="server" Height="75px" ImageUrl="~/pics/login.jpg" />
+    <asp:Button ID="user_manager" runat="server" Text="Switch to User Manager" />
+   
             <br /><br /><hr />
             
                 <h3>Manage Roles:</h3>

@@ -64,4 +64,7 @@ Partial Class site_mgr_UserMgmt
 
     End Sub
 
+    Protected Sub role_button_Click(sender As Object, e As EventArgs) Handles role_button.Click
+        Response.AddHeader("REFRESH", "0;URL=RoleMgmt.aspx")
+    End Sub
 End Class

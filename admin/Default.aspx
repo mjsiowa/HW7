@@ -5,9 +5,28 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <asp:Image ID="Image4" runat="server" ImageUrl="~/pics/admin.jpg" Height="75px" />
+    <table><tr>
+    <td><asp:Image ID="Image4" runat="server" ImageUrl="~/pics/admin.jpg" Height="60px" />
+    </td>
+        <td style="vertical-align:middle">
+        <ul><li>
+            <asp:HyperLink ID="Add_Movie" runat="server" NavigateUrl="~/admin/newmovie.aspx">Add New movie</asp:HyperLink>
+            </li>
+        <li> | </li>
+            <li>
+                <asp:HyperLink ID="update" runat="server" NavigateUrl="~/admin/admin_search.aspx">Update/Delete</asp:HyperLink>
+                
+            </li>
+        <li> | </li>
+            <li>
+                <asp:HyperLink ID="Modify" runat="server" NavigateUrl="~/site_mgr/UserMgmt.aspx">Modify Users</asp:HyperLink>
+                
+        </li>
+    </ul>
+        </td></tr>
+   </table>
 
-    <table>
+    <table class="centered" width="100%">
         <tr>
             <td>
                 <asp:HyperLink ID="new_movie_link" runat="server" NavigateUrl="~/admin/newmovie.aspx"><asp:Image ID="Image1" runat="server" ImageUrl="~/pics/images.jpg" Height="150px" />
@@ -22,7 +41,7 @@
             <td>
                 <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/site_mgr/UserMgmt.aspx">
 
-                    <asp:Image ID="Image3" runat="server" ImageUrl="~/pics/delete-300x300.jpg" Height="150px" />
+                    <asp:Image ID="Image3" runat="server" ImageUrl="~/pics/login.jpg" Height="150px" />
                 </asp:HyperLink>
                 
 
