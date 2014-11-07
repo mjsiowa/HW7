@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="VB" MasterPageFile="~/movies.master" AutoEventWireup="false" CodeFile="admin_search.aspx.vb" Inherits="search" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">Search All About Movies
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    Edit/Delete Movies
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">

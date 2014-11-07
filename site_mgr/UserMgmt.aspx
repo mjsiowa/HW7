@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="VB" MasterPageFile="~/movies.master" AutoEventWireup="false" CodeFile="UserMgmt.aspx.vb" Inherits="site_mgr_UserMgmt" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    User Manager
 </asp:Content>
 
 

@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="VB" MasterPageFile="~/movies.master" AutoEventWireup="false" CodeFile="contact.aspx.vb" Inherits="contactus" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    Contact Us
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
