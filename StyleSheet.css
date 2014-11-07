@@ -1,4 +1,4 @@
-﻿body { background-color:cornflowerblue; font-size:14px;
+﻿body { background-color:royalblue; font-size:14px; padding-top:15px;
 
 }
 
@@ -30,7 +30,9 @@ a:hover, a:active, a:visited { text-decoration:none; color:black; }
 
 .cssgridview td { padding:10px; border:solid 1px;}
 
-.cssgridview th { padding:10px; color:white; background-image:url(pics/black-gradient.jpg)}
+.cssgridview th { padding:10px; background-color:lightblue;
+                  
+}
 
 .cssgridview .alt {background-image:url(pics/Grey-Gradient.jpg)}
 

@@ -74,7 +74,7 @@
             </td>
                 <td>
 
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="ReleaseYearTextBox" ErrorMessage="Please enter movie relsease year"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="ReleaseYearTextBox" ErrorMessage="Please enter movie release year"></asp:RequiredFieldValidator>
 
                 </td>
                 </tr>

@@ -33,7 +33,7 @@
 
 
         <br />
-        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" PageSize="8" CellPadding="4" CellSpacing="2" CssClass="cssgridview">
+        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" PageSize="8" CellPadding="4" CellSpacing="2" CssClass="cssgridview" AllowSorting="True">
             <AlternatingRowStyle CssClass="alt" />
             <Columns>
                 <asp:BoundField DataField="Title" HeaderText="Title" SortExpression="Title" />
